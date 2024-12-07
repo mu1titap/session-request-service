@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
-@FeignClient(name="mentoring-service")
+@FeignClient(url = "http://api.adaptors.site/mentoring-service", name = "mentoring-service")
 public interface MentoringServiceFeignClient {
 
     // mentoring-service 의 세션 조회 api 호출
